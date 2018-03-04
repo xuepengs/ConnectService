@@ -6,7 +6,7 @@ import android.os.IBinder;
 
 public class MyService extends Service {
     private boolean running=false;
-    private String data="这是默认的信息";
+    private String data="默认的信息";
 
     public MyService() {
     }
