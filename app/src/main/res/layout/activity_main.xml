@@ -25,4 +25,22 @@
         android:layout_height="wrap_content"
         android:text="停止服务" />
 
+    <Button
+        android:id="@+id/btnBindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定服务" />
+
+    <Button
+        android:id="@+id/btnUnbindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解除绑定服务" />
+
+    <Button
+        android:id="@+id/btnSyrcData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="共享数据" />
+
 </LinearLayout>

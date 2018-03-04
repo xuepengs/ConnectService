@@ -2,6 +2,7 @@ package com.example.xuepeng.connectservice;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.IBinder;
 
 public class MyService extends Service {
@@ -13,8 +14,17 @@ public class MyService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+        return new Binder();
+
+    }
+
+    public class Binder extends android.os.Binder{
+        public void setData(String data){
+            MyService.this.data=data;
+        }
+
+
+
     }
 
     @Override
